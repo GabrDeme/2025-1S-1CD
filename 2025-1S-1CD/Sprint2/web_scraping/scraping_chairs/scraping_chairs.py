@@ -30,6 +30,7 @@ chrome_driver_path = "C:\Program Files\chromedriver-win64\chromedriver-win64\chr
 # Configurações do Webdriver
 service = Service(chrome_driver_path) # Navegador controlado pelo Selenium
 options = webdriver.ChromeOptions() # Configurações do navegador
+""" options.add_argument("--headless") """ # Executa o navegador sem abrir uma interface gráfica
 options.add_argument("--disble-gpu") # Evita possíveis erros gráficos
 options.add_argument("--windw-size=1920,1080") # Resolução fixa
 
@@ -67,6 +68,39 @@ while True:
             print(f"{nome}: {preco}")
 
             dic_produtos["marca"].append(nome)
-            dic_produtos["preco"].append(preco)
-        except Exception:
-            print("Erro ao coletar dados: ", Exception)
+            dic_produtos["preço"].append(preco)
+        except Exception as e:
+            print("Erro ao coletar dados: ", e)
+    
+    try:
+        # Encontra o elemento de ir para a próxima página, vulgo setinha
+        botao_proximo = WebDriverWait(driver, 5).until(
+            ec.element_to_be_clickable((By.CLASS_NAME, "nextLink"))
+        )
+
+        if botao_proximo:
+            driver.execute_script("arguments[0].scrollIntoView();", botao_proximo)
+            time.sleep(1)
+
+            # Clique no botão
+            driver.execute_script("arguments[0].click();", botao_proximo)
+            print(f"Indo para a página {pagina} ")
+            pagina += 1
+            time.sleep(5)
+
+        else:
+            print("VocÊ chegou na última página!")
+            break
+
+
+
+    except Exception as e:
+        print("Erro ao tentar avançar para a próxima página: ", e)
+        break
+# Deleta o navegador
+driver.quit()
+
+df = pd.DataFrame(dic_produtos)
+df.to_excel("cadeiras.xlsx", index=False)
+
+print(f"Arquivo 'cadeiras' salvo com sucesso! {len(df)} produtos capturados")
