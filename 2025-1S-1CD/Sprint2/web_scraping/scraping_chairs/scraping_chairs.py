@@ -31,8 +31,8 @@ chrome_driver_path = "C:\Program Files\chromedriver-win64\chromedriver-win64\chr
 service = Service(chrome_driver_path) # Navegador controlado pelo Selenium
 options = webdriver.ChromeOptions() # Configurações do navegador
 """ options.add_argument("--headless") """ # Executa o navegador sem abrir uma interface gráfica
-options.add_argument("--disble-gpu") # Evita possíveis erros gráficos
-options.add_argument("--windw-size=1920,1080") # Resolução fixa
+options.add_argument("--disable-gpu") # Evita possíveis erros gráficos
+options.add_argument("--window-size=1920,1080") # Resolução fixa
 
 # Inicialização do Webdriver
 driver = webdriver.Chrome(service=service, options=options)
@@ -89,7 +89,7 @@ while True:
             time.sleep(5)
 
         else:
-            print("VocÊ chegou na última página!")
+            print("Você chegou na última página!")
             break
 
 
