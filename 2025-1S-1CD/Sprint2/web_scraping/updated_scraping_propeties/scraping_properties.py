@@ -52,7 +52,7 @@ while imovel <= 100:
     for casinha in casinhas:
         imovel += 1
         try:
-            rua = safe_find_text(casinha, '[data-cy="rp-cardProperty-location-txt"]')
+            rua = safe_find_text(casinha, '[data-cy="rp-cardProperty-street-txt"]')
             valor = safe_find_text(casinha, '[data-cy="rp-cardProperty-price-txt"] > p:nth-of-type(1)')
             valor_iptu_cond = safe_find_text(casinha, '[data-cy="rp-cardProperty-price-txt"] > p:nth-of-type(2)')
             metragem = safe_find_text(casinha, '[data-cy="rp-cardProperty-propertyArea-txt"] > h3')
