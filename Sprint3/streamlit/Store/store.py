@@ -41,7 +41,7 @@ def Home():
 
     total1, total2, total3 = st.columns(3)
     with total1:
-        # Apresentando inidacaodres rápidos
+        # Apresentando inidacadores rápidos
         st.metric("🔢 Total Vendido", value=int(total_vendas)) # Esse 'metric' é o tal do apresentador
     with total2:
         st.metric("📈 Média por Produto", value=media)
