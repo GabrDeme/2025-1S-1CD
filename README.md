@@ -82,3 +82,5 @@ Scientific writing is a formal and evidence-based way of communicating research 
 - [Integration Project repository]()
 - [Extension Project repository](https://github.com/GabrDeme/Waste-Data-SP)
 - [Python for Data Science course repository](https://github.com/GabrDeme/PPDS-2024)
+- [Coding Dojo - IMDb Top 250 movies](https://github.com/GabrDeme/2025-1S-1CD/tree/main/Sprint2/coding_dojo)
+- [Hackathon - HR analysis](https://github.com/GabrDeme/2025-1S-1CD/tree/main/Sprint3/hackaton)
