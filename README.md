@@ -1,3 +1,5 @@
+<img alt="" src="/Assets/Banner.png">
+
 # First Semester of Data Science Graduation
 
 Welcome to the **First Semester of Data Science Graduation** repository!
