@@ -1,4 +1,4 @@
-<img alt="" src="/Assets/Banner.png">
+<img alt="" src="/Assets/banner.png">
 
 # First Semester of Data Science Graduation
 
