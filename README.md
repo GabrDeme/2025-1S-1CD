@@ -80,6 +80,8 @@ Scientific writing is a formal and evidence-based way of communicating research 
   ```
   <img alt="" src="/Assets/Streamlit.mp4">
 
+https://github.com/user-attachments/assets/3ea225ef-d688-464a-afb6-97896bd0463f
+
 ### Mora Infos, Links and Projects
 - [Integration Project repository]()
 - [Extension Project repository](https://github.com/GabrDeme/Waste-Data-SP)
