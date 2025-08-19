@@ -78,7 +78,8 @@ Scientific writing is a formal and evidence-based way of communicating research 
   import plotly.express as px
   from streamlit_option_menu import option_menu
   ```
-  <img alt="" src="/Assets/Streamlit.mp4">
+  
+https://github.com/user-attachments/assets/3ea225ef-d688-464a-afb6-97896bd0463f
 
 ### Mora Infos, Links and Projects
 - [Integration Project repository]()
